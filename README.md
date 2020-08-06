@@ -37,3 +37,10 @@ Maintainer: Hyung-Taik Choi
     ```
     - Directives that can be used: `#if`, `#ifdef`, `#ifndef`, `#elif`, `#else`, and `#endif`.
 3. Macro Definition
+
+### Project Result
+![Result Image](./images/results.PNG)
+1. Compile as `id` using `gcc main.c func.c -o id`.
+2. Result successfully display's ID because PRINT_ID is not defined.
+3. Compile as `name` using `gcc main.c func.c -o name`.
+4. Result successfully display's name because PRINT_ID was defined during runtime.
