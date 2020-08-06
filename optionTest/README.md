@@ -13,6 +13,21 @@ Maintainer: Hyung-Taik Choi
 7. `whoami`: Display's current username.
 8. `passwd`: Set password for current user.
 
+## Interpreter vs Compiler
+### Interpreter
+- Translates program one statement at a time.
+- Interpreters usually take less amount of time to analyze source code.
+- Interpreters have slower overall execution time compared to compilers.
+- No intermediate object code, which makes it memory efficient.
+- JavaScript, Python, Ruby use interpreters.
+
+### Compilers
+- Scans the entire program and translates it as a whole into machine code.
+- Compilers usually take more amount of time to analyze source code.
+- Compilers have faster overall execution time compared to interpreters.
+- Generates intermediate object code which reqires linking, which is memory-consuming.
+- C, C++, Java use compilers.
+
 ## C Preprocessor
 1. GCC compile options  
     - GCC options can be used to handle the processing system to a designated level.  
