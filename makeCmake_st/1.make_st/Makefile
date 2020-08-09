@@ -1,11 +1,18 @@
-test: test1.o test2.o test3.o
-	gcc -o test test1.o test2.o test3.o
+SRCS := main.c func.c
+OBJS := $(SRCS:.c=.o)
+CC := gcc
+CFLAGS = -c -Wall -g
+# CFLAGS = -c -Wall -O2
 
-test1.o: test1.c a.h b.h
-	gcc -c test1.c
+three_file : $(OBJS)
+	$(CC) -o $@ $^
 
-test2.o: test2.c a.h c.h
-	gcc -c test2.c
+.c.o : 
+	$(CC) $(CFLAGS) $<
 
-test3.o: test3.c a.h b.h c.h
-	gcc -c test3.c
+clean : 
+	-rm $(OBJS)
+	rm three_file
+
+dep :
+	gccmakedep $(SRCS)
