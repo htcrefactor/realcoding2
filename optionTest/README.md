@@ -47,3 +47,9 @@ Maintainer: Hyung-Taik Choi
         - `gcc -v`: Print executables with version information.
 
 ## Project Result
+### Optimization with -O command
+![image](optionTest/images/O2-optimization-result.png)
+Left: No Optimization, Right: -O2 Optimization  
+
+Test was made by comparing the elapsed time to run fixed point arithmetic INT_MAX times.
+
