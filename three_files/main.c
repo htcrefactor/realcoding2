@@ -4,6 +4,5 @@
 
 int main(void) {
 	func_name_or_id();
-
 	return 0;
 }
