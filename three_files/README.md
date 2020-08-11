@@ -1,6 +1,3 @@
-# battle_c
-Maintainer: Hyung-Taik Choi
-
 # Project: three_files
 ## C Preprocessor  
 1. Include header files
