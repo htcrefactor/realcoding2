@@ -1,11 +1,3 @@
-// Input: 30 short values of score data 
-// short s / scanf("%hd", &s);
-
-// Main: makes sthread1, sthread2 work and leaves
-// sthread1: avg, sum
-// sthread2: sort and print
-// man pthread_create
-
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -22,21 +14,6 @@ int compare(const void* first, const void* second) {
     else if (*(short*)first < *(short*)second) return -1;
     else return 0;
 }
-
-// void* hello_thread(void* arg) {
-// 	int i = 200;
-
-// 	printf("Hello_Thread Start(d1:%d, d2:%d, i:%d)!!\n", d1, d2, i);
-// 	for (i = 1; i <= (int)arg; i++) {
-// 		printf("Hello_Thread_%d!!\n", i);
-// 		d1++;
-// 		d2++;
-// 		sleep(1);
-// 	}
-// 	printf("Hello_Thread End(d1:%d, d2:%d, i:%d)!!\n", d1, d2, i);
-// 	//return arg;
-// 	pthread_exit(arg);
-// }
 
 void* pthread1StartRoutine(void* arg) {
 	for(int i = 0 ; i < SCORES_SIZE ; i++) {
@@ -57,14 +34,14 @@ void* pthread2StartRoutine(void* arg) {
 }
 
 int main(void) {
-	// for(int i = 0 ; i < SCORES_SIZE ; i++) {
-	// 	scanf("%hd", scores[i]);
-	// }
+	for(int i = 0 ; i < SCORES_SIZE ; i++) {
+		scanf("%hd", scores[i]);
+	}
 
 	pthread_t sthread1;
 	pthread_t sthread2;
 
-	pthread_attr_t attr; // Find attributes by googling.
+	pthread_attr_t attr;
 	int status;
 
 	printf("Main_Thread Start\n");
@@ -78,7 +55,6 @@ int main(void) {
 		exit(1);
 	}
 
-	// Do not kill shared global memory so child threads can still use this data.
 	pthread_exit(NULL);
 
 	return 0;
