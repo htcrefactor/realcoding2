@@ -48,8 +48,10 @@ Maintainer: Hyung-Taik Choi
 
 ## Project Result
 ### Optimization with -O command
-![image](optionTest/images/O2-optimization-result.png)
-Left: No Optimization, Right: -O2 Optimization  
+![image](images/optimization-result.png)
+| Optimization | Elapsed Time |
+| -- | -- |
+| True | 0.000001 sec |
+| False | 13.087765 sec |
 
 Test was made by comparing the elapsed time to run fixed point arithmetic INT_MAX times.
-
