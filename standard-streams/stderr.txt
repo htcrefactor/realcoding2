@@ -1,1 +1,1 @@
-Error: It is positive
+Error: It is postive
