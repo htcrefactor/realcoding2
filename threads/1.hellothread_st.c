@@ -1,4 +1,6 @@
-// Input: 30 int values of score data
+// Input: 30 short values of score data 
+// short s / scanf("%hd", &s);
+
 // Main: makes sthread1, sthread2 work and leaves
 // sthread1: avg, sum
 // sthread2: sort and print
