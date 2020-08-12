@@ -11,7 +11,7 @@ mytest : $(OBJS)
 #dummy target
 clean: 
 	-rm $(OBJS)
-	-rm mytest exam2 exam3
+	-rm mytest
 
 dep:
 	gccmakedep $(SRCS)
