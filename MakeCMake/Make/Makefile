@@ -2,10 +2,10 @@ SRCS := test1.c test2.c test3.c
 OBJS := $(SRCS:.c=.o)
 
 SRCS2 := exam2.c test2.c
-OBJS2 := $(SRCS2@:.c=.o)
+OBJS2 := $(SRCS2:.c=.o)
 
 SRCS3 := exam3.c test3.c
-OBJS3 := $(SRCS3@:.c=.o)
+OBJS3 := $(SRCS3:.c=.o)
 
 CC := gcc
 CFLAGS = -Wall -g
