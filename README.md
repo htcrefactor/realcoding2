@@ -16,3 +16,5 @@ Project documentations are maintained by the above maintainer per directory.
 ### [Raspberry Pi & GPIOs](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/GPIO)
 
 ### [Pointers](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/pointers)
+
+## [Threads](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/threads)
