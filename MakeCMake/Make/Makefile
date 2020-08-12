@@ -1,18 +1,35 @@
-SRCS := main.c func.c
+SRCS := test1.c test2.c test3.c
 OBJS := $(SRCS:.c=.o)
-CC := gcc
-CFLAGS = -c -Wall -g
-# CFLAGS = -c -Wall -O2
 
-three_file : $(OBJS)
+SRCS2 := exam2.c test2.c
+OBJS2 := $(SRCS2@:.c=.o)
+
+SRCS3 := exam3.c test3.c
+OBJS3 := $(SRCS3@:.c=.o)
+
+CC := gcc
+CFLAGS = -Wall -g
+#CFLAGS = -c -Wall -O2
+
+all : mytest exam2 exam3
+
+mytest : $(OBJS)
 	$(CC) -o $@ $^
 
-.c.o : 
-	$(CC) $(CFLAGS) $<
+exam2 : $(OBJS2)
+	$(CC) -o $@ $^
 
-clean : 
+exam3 : $(OBJS3)
+	$(CC) -o $@ $^
+
+#test1.o : test1.c a.h b.h
+
+#dummy target
+clean: 
 	-rm $(OBJS)
-	rm three_file
+	-rm $(OBJS2)
+	-rm $(OBJS3)
+	-rm mytest exam2 exam3
 
-dep :
+dep:
 	gccmakedep $(SRCS)
