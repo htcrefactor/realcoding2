@@ -35,7 +35,7 @@ void* pthread2StartRoutine(void* arg) {
 
 int main(void) {
 	for(int i = 0 ; i < SCORES_SIZE ; i++) {
-		scanf("%hd", scores[i]);
+		scanf("%hd", &scores[i]);
 	}
 
 	pthread_t sthread1;
