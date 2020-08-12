@@ -45,7 +45,6 @@
 1. Compile as `main.exe` using `gcc hello.c`.
 2. Run using `./main.exe <input_data 1>stdout.txt 2>stderr.txt`
 3. Check result.
-4. Below are all equal codes.
+4. Below codes yield equal results.
     - `./main.exe 0<input_data 1>stdout.txt 2>stderr.txt`
     - `./main.exe <input_data 1>stdout.txt 2>stderr.txt`
-    - 
