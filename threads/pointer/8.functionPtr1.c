@@ -27,6 +27,7 @@ int main(void)
 
 		switch(no) {
 			// function pointers can omit the "&" sign
+			case 0: return 0;
 			case 1: fp = &add; break;
 			case 2: fp = sub; break;
 			case 3: fp = &mul; break;
