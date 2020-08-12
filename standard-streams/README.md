@@ -26,15 +26,12 @@
     - `cat input_data`: Prints `input_data` to terminal display
     - `cat > input_data`: `stdin` is redirected to `cat::stdin`, `cat::stdout` is redirected to `input_data`.
     ![Example Image](cat-to-input_data.png)
-    <br>
     - `./main.exe < input_data`: `input_data` is redirected to `main.exe::stdin`.
     - `./main.exe > output_data`: `main.exe::stdout` is redirected to `output_data`.
     ![Example Image](input-and-output-for-main.png)
-    <br>
     - `./main.exe < input_data > output_data`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `output_data`.
     ![Example Image](input-while-output-for-main.png)
-    <br>
-    - `./main.exe <input_data 1>stdout.txt 2>stderr.txt`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `stdout.txt` and `main.exe::stderr` is redirected to `stderr.txt`.
+    - `./main.exe <input_data 1>stdout.txt 2>stderr.txt`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `stdout.txt` and `main.exe::stderr` is redirected to `stderr.txt`.  
     ![Example Image](stdin-stdout-stderr-for-main.png)
 
 
