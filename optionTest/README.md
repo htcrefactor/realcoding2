@@ -49,6 +49,7 @@ Maintainer: Hyung-Taik Choi
 ## Project Result
 ### Optimization with -O command
 ![image](images/optimization-result.png)
+
 | Optimization | Elapsed Time |
 | -- | -- |
 | True | 0.000001 sec |
