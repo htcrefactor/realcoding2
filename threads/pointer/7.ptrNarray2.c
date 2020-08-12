@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void printData_1(short* data) // const short* data for better protection.
+void printData_1(const short* data) // const short* data for better protection.
 {
 	int i;
 
@@ -9,7 +9,7 @@ void printData_1(short* data) // const short* data for better protection.
 	}
 }
 
-void printData_2(short data[5]) // Or (short data[])
+void printData_2(const short data[5])
 {
 	int i;
 
@@ -18,7 +18,7 @@ void printData_2(short data[5]) // Or (short data[])
 	}
 }
 
-void updateData()
+void updateData(short data[])
 {
 	int i;
 	for(i=0; i<5; i++) data[i] += 10;
