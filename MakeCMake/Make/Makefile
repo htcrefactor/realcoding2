@@ -2,7 +2,7 @@ SRCS := test1.c test2.c test3.c
 OBJS := $(SRCS:.c=.o)
 
 CC := gcc
-CFLAGS = -Wall -g  -Imyinclude
+CFLAGS = -Wall -g -Imyinclude
 #CFLAGS = -c -Wall -O2
 
 mytest : $(OBJS)
