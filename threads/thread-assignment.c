@@ -7,7 +7,7 @@
 
 float avg = 0;
 short sum = 0;
-short scores[SCORES_SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+short scores[SCORES_SIZE] = {};
 
 int compare(const void* first, const void* second) {
 	if (*(short*)first > *(short*)second) return 1;
