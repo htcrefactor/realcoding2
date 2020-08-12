@@ -11,7 +11,7 @@ Project documentations are maintained by the above maintainer per directory.
 
 ### [CPP Option Tests](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/optionTest)
 
-### [Make & CMake](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/MakeCMake_st)
+### [Make & CMake](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/makeCMake_st)
 
 ### [Raspberry Pi & GPIOs](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/GPIO)
 
