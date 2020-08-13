@@ -1,4 +1,5 @@
 # Project: Threads
+<<<<<<< HEAD
 ## Threads
 In computer science, a thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.
 
@@ -13,6 +14,8 @@ It is true that processes and threads share many similar concepts but differ in 
 - Context switching between threads in the same process typically occurs faster than context switching between processes
 
 
+=======
+>>>>>>> 060cead78713e813b8d0338585a2f101c49ac59e
 
 ## Project Result
 ![Description](src)
