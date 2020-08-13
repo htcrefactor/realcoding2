@@ -17,4 +17,4 @@ Project documentations are maintained by the above maintainer per directory.
 
 ### [Pointers](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/pointers)
 
-## [Threads](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/threads)
+### [Threads](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/threads)
