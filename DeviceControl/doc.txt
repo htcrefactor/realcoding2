@@ -1,0 +1,8 @@
+Linux manages files using i-node number.
+linking makes file to be idential, but displays as different files.
+ls -li to see inode number.
+
+ln -s main.c slink2.c
+vi slink2.c
+
+`more` >  `less` impact
