@@ -18,6 +18,7 @@
 #define OFF_GPSET0 (0x1C)
 #define OFF_GPCLR0 (0x28)
 
+// volatile is used to tell the compiler not to optimize this variable.
 volatile unsigned int *gpio;
 
 int main(void)
