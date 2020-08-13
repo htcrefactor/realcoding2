@@ -8,7 +8,7 @@ SRCS3 := exam3.c test3.c
 OBJS3 := $(SRCS3:.c=.o)
 
 CC := gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -Imyinclude
 #CFLAGS = -c -Wall -O2
 
 all : mytest exam2 exam3
