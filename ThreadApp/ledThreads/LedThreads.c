@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     {
         if (strcmp(argv[1], "1") == 0)
         {
-            if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[1]) != 0)
+            if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[2]) != 0)
             {
                 perror("pthread_create");
                 exit(1);
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
         else if (strcmp(argv[1], "2") == 0)
         {
-            if (pthread_create(&tid_yellow, NULL, thread_function_yellow, argv[1]) != 0)
+            if (pthread_create(&tid_yellow, NULL, thread_function_yellow, argv[2]) != 0)
             {
                 perror("pthread_create");
                 exit(1);
@@ -69,13 +69,13 @@ int main(int argc, char *argv[])
 
         else if (strcmp(argv[1], "3") == 0)
         {
-            if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[1]) != 0)
+            if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[2]) != 0)
             {
                 perror("pthread_create");
                 exit(1);
             }
 
-            if (pthread_create(&tid_yellow, NULL, thread_function_yellow, argv[1]) != 0)
+            if (pthread_create(&tid_yellow, NULL, thread_function_yellow, argv[2]) != 0)
             {
                 perror("pthread_create");
                 exit(1);
