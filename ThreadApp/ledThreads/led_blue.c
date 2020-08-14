@@ -5,6 +5,6 @@
 #include "led.h"
 
 void* thread_function_blue(void* arg) {
-    blinkLed(GPIO_WPI_BLUE, GPIO_PERIOD_BLUE, (int*)arg);
+    blinkLed(GPIO_WPI_BLUE, GPIO_PERIOD_BLUE, atoi((int*)arg));
     pthread_exit("thread_blue end");
 }
