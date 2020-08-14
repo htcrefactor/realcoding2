@@ -12,7 +12,7 @@ void * thread_function(void *);
 
 int Counter=0;
 #ifndef NOMUTEX
-.... mutex_id;
+pthread_mutex_t mutex_id;
 #endif
 
 int main(void)
@@ -21,33 +21,33 @@ int main(void)
 	void *thread_result;
 
 #ifndef NOMUTEX
-	if(________(&mutex_id, NULL) != 0){
+	if(pthread_mutex_init(&mutex_id, NULL) != 0){
 		perror("pthread_mutex_init");
 		exit(errno);
 	}
 #endif
 
-	if(_______(&tid1, NULL, thread_function, "thread1")!=0) {
+	if(pthread_create(&tid1, NULL, thread_function, "thread1")!=0) {
 		perror("pthread_create");
 		exit(1);
 	}
 	
-	if(_______(&tid2, NULL, thread_function, "thread2")!=0) {
+	if(pthread_create(&tid2, NULL, thread_function, "thread2")!=0) {
 		perror("pthread_create");
 		exit(1);
 	}
 	
-	if(_______(tid1, &thread_result)!=0) {
+	if(pthread_join(tid1, &thread_result)!=0) {
 		perror("pthread_join");
 		exit(1);
 	}
-	if(_______(tid2, &thread_result)!=0) {
+	if(pthread_join(tid2, &thread_result)!=0) {
 		perror("pthread_join");
 		exit(1);
 	}
 	
 #ifndef NOMUTEX
-	___________(&mutex_id);
+	pthread_mutex_destroy(&mutex_id);
 #endif
 
 	printf(" thread result : %s\n", (char *) thread_result);
@@ -63,7 +63,7 @@ void * thread_function(void * arg)
 	printf("thread_function called\n");	
 	for(i=0; i<8; i++) {
 #ifndef NOMUTEX
-		_________(&mutex_id);
+		pthread_mutex_lock(&mutex_id);
 #endif
 		sprintf(buffer, "%s: CountRelay: from %d to ", (char*)arg, Counter);
 		write(1, buffer, strlen(buffer));
@@ -79,9 +79,9 @@ void * thread_function(void * arg)
 		write(1, buffer, strlen(buffer));
 		
 #ifndef NOMUTEX
-		__________(&mutex_id);
+		pthread_mutex_unlock(&mutex_id);
 #endif
 	}
 	// getchar();
-	_______("thread end");
+	pthread_exit("thread end");
 }
