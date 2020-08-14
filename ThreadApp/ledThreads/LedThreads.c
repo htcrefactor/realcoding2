@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
     else
     {
-        if (strcmp(argv[0], "1") == 0)
+        if (strcmp(argv[1], "1") == 0)
         {
             if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[1]) != 0)
             {
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        else if (strcmp(argv[0], "2") == 0)
+        else if (strcmp(argv[1], "2") == 0)
         {
             if (pthread_create(&tid_yellow, NULL, thread_function_yellow, argv[1]) != 0)
             {
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        else if (strcmp(argv[0], "3") == 0)
+        else if (strcmp(argv[1], "3") == 0)
         {
             if (pthread_create(&tid_blue, NULL, thread_function_blue, argv[1]) != 0)
             {
