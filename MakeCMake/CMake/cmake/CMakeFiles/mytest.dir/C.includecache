@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/a.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/b.h
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/c.h
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/test1.c
+a.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/a.h
+b.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/b.h
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/test2.c
+a.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/a.h
+c.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/c.h
+
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/test3.c
+a.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/a.h
+b.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/b.h
+c.h
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/c.h
+
