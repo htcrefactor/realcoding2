@@ -1,0 +1,3 @@
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/battle_c/MakeCMake/CMake/cmake/build/CMakeFiles/mytest.dir
