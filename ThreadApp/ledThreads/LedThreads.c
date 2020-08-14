@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
 #ifndef NOMUTEX
     pthread_mutex_destroy(&mutex_id);
 #endif
-
+    pthread_exit(NULL);
     printf("Execution Finished :: %s\n", (char *)thread_result);
     return 0;
 }
