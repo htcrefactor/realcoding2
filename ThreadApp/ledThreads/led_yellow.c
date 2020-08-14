@@ -7,6 +7,6 @@
 #include "led.h"
 
 void* thread_function_yellow(void* arg) {
-    blinkLed(GPIO_WPI_YELLOW, GPIO_PERIOD_YELLOW, atoi((int*)arg));
+    blinkLed(GPIO_WPI_YELLOW, GPIO_PERIOD_YELLOW, atoi((char*)arg));
     pthread_exit("thread_yellow end");
 }
