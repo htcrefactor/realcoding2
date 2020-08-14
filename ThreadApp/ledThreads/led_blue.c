@@ -2,6 +2,7 @@
 #define GPIO_PERIOD_BLUE 2
 
 #include <stdlib.h>
+#include <pthread.h>
 
 #include "led_blue.h"
 #include "led.h"

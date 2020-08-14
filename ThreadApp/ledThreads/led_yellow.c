@@ -2,6 +2,7 @@
 #define GPIO_PERIOD_YELLOW 3
 
 #include <stdlib.h>
+#include <pthread.h>
 
 #include "led_yellow.h"
 #include "led.h"
