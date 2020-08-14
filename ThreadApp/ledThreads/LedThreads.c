@@ -8,6 +8,8 @@
 #include <sys/syscall.h>
 
 #include "led.h"
+#include "led_blue.h"
+#include "led_yellow.h"
 
 #define NOMUTEX
 
