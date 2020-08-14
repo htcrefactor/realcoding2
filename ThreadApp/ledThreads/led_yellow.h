@@ -1,0 +1,1 @@
+extern void* thread_function_yellow(void* arg);
