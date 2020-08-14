@@ -23,5 +23,59 @@ target:   dependencies ...
 To sum up, *dependencies* are manipulated as stated in the *rule* to create the *target*.
 
 ### Makefile Macros
+#### Internal Macros
+| Name | Description |
+| --- | --- |
+| $@ | Name of file to be made |
+| $? | Names of the changed dependents |
+| $* | Prefix shared by target and dependent files |
+| $< | Name of related file that caused the action |
+| $^ | Names of all dependencies |
+
+#### Predefined Macros
+| Name | Description |
+| --- | --- |
+| $(CC) | Choose compiler |
+| CFLAGS | Flags to assign when using the compiler defined in $(CC) |
 
 ## Project Result
+
+```
+SRCS := test1.c test2.c test3.c
+OBJS := $(SRCS:.c=.o)
+
+SRCS2 := exam2.c test2.c
+OBJS2 := $(SRCS2:.c=.o)
+
+SRCS3 := exam3.c test3.c
+OBJS3 := $(SRCS3:.c=.o)
+
+CC := gcc
+CFLAGS = -Wall -g -Imyinclude
+#CFLAGS = -c -Wall -O2
+
+all : mytest exam2 exam3
+
+mytest : $(OBJS)
+	$(CC) -o $@ $^
+
+exam2 : $(OBJS2)
+	$(CC) -o $@ $^
+
+exam3 : $(OBJS3)
+	$(CC) -o $@ $^
+
+#test1.o : test1.c a.h b.h
+
+#dummy target
+clean: 
+	-rm $(OBJS)
+	-rm $(OBJS2)
+	-rm $(OBJS3)
+	-rm mytest exam2 exam3
+
+dep:
+	gccmakedep $(SRCS)
+```
+
+
