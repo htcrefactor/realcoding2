@@ -19,7 +19,7 @@ pthread_mutex_t mutex_id;
 
 int main(int argc, char *argv[]) 
 {
-    if (argc != 1 || argc != 3)
+    if (argc != 1 && argc != 3)
     {
         printf("Usage : LedThreads.exe [GPIO_NO] [BLINK_NO]\n");
         exit(-1);
