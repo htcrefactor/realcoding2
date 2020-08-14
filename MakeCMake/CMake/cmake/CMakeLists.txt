@@ -1,0 +1,1 @@
+add_executable (mytest test1.c test2.c test3.c)
