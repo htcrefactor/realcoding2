@@ -29,7 +29,7 @@
     - `./main.exe < input_data`: `input_data` is redirected to `main.exe::stdin`.
     - `./main.exe > output_data`: `main.exe::stdout` is redirected to `output_data`.
     ![Example Image](input-and-output-for-main.png)
-    - `./main.exe < input_data > output_data`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `output_data`.
+    - `./main.exe < input_data > output_data`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `output_data`.  
     ![Example Image](input-while-output-for-main.png)
     - `./main.exe <input_data 1>stdout.txt 2>stderr.txt`: `input_data` is redirected to `main.exe::stdin` while `main.exe::stdout` is redirected to `stdout.txt` and `main.exe::stderr` is redirected to `stderr.txt`.  
     ![Example Image](stdin-stdout-stderr-for-main.png)
