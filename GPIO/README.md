@@ -8,6 +8,18 @@
 - GPIO stands for General Purpose Input Output.
 ![GPIO](GPIO-Pinout-Diagram-2.png)
 
+### GPIO commands
+#### Terminal
+- `gpio readall`
+- `gpio mode 1 OUT`
+- `gpio write 1 ON`
+- `gpio toggle 1`
+
+#### WiringPi in C
+- `wiringPiSetup();`
+- `pinMode(29, OUTPUT);`
+- `digitalWrite(29, 1);`
+
 ## Project Result
 ![GPIO readall](gpio-readall.jpg)
 ![Blinking LED](result-blinking-led.gif)
