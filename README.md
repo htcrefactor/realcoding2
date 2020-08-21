@@ -20,3 +20,5 @@ Project documentations are maintained by the above maintainer per directory.
 ### [Threads](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/threads)
 
 ### [Device Control](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/DeviceControl)
+
+### [Software Testing](https://git.ajou.ac.kr/htcrefactor/battle_c/-/tree/master/SoftwareTesting)
