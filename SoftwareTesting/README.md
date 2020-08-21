@@ -1,4 +1,3 @@
-
 ## Errors
 Syntax or Semantic
 
@@ -29,6 +28,13 @@ Maintainer: Hyung-Taik Choi
 ![V Model Diagram](v-model-chart.png)
 
 ## Project Result
-![Project Result](project-result.png)
+### MISRA-C 2012 Conformity Test
+![MISRA-C Conformity Test Result](project-result.PNG)
 Initial Error Count: 94 items
 Final Error Count: 0 items
+
+### Coverage Test
+![Coverage Test Result](coverage-test.png)
+
+
+
