@@ -27,6 +27,17 @@ Maintainer: Hyung-Taik Choi
 
 ![V Model Diagram](v-model-chart.png)
 
+## Structure Based Testing
+- Statement Testing: Test designed to run every line of code at least once.
+- Decision Testing: Test designed to run every branch of conditional statements.
+- Condition Testing: Test designed to evaluate every possible outcomes of existing boolean expressions.
+- MC/DC Testing: Test designed by combining condition testing and decision testing.
+    - MC/DC requires all of the below during testing:
+        *Each entry and exit point is invoked
+        * Each decision takes every possible outcome
+        * Each condition in a decision takes every possible outcome
+        * Each condition in a decision is shown to independently affect the outcome of the decision.
+
 ## Project Result
 ### MISRA-C 2012 Conformity Test
 ![MISRA-C Conformity Test Result](project-result.PNG)
