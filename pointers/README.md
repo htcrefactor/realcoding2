@@ -21,3 +21,15 @@ int star_operator = *pointer;
 printf("%d\n", star_operator);
 ```
 
+- `+`: Binary operator that returns the pointer value incremented according to size of data type.
+```
+int variable = 0;
+int* pointer = &variable;
+int* plus_operator = pointer + 1;
+
+// Prints sizeof(int)
+printf("%d\n", plus_operator - pointer);
+```
+
+## Function Pointers
+
